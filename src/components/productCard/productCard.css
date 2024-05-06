@@ -1,0 +1,12 @@
+.recent__cart__item{
+    object-fit: cover;
+    min-width: 246px;
+    min-height: 170px;
+}
+.cart__title{
+    transition: all ease-in .2s;
+    cursor: pointer;
+}
+.cart__title:hover{
+    color: var(--primary-blue);
+}

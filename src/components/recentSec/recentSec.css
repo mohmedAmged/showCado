@@ -1,38 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+.recent__Sec{
+    margin-top: 40px;
+    padding: 10px;
 }
-.errorContainer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: 100000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.recent__head{
+    line-height: 1.2;
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: capitalize;
 }
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.47);
+.recent__cart__handler{
+    border-top: 4px solid #153e4d;
+    padding-top: 29px;
 }
-.input-error {
-    box-shadow: 0 0 5px 2px #ff2020 !important;
-}
-.error-text {
-    color: #ff2020 !important;
-}
-
-
-/* /////////////////// */
 .cart__top{
     position: relative;
     overflow: hidden;

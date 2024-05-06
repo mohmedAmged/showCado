@@ -1,0 +1,91 @@
+.discoverSlider__handler{
+    margin-top: 60px;
+}
+.discoverSlider__head h3{
+    line-height: 36px;
+    font-weight: 700;
+    font-size: 36px;
+    text-transform: capitalize;
+}
+.discoverSlider__head p{
+    font-size: 18px;
+    color: #6c6c6c;
+    margin-bottom: 30px;
+}
+.discoverSlider__card__item{
+    border-radius: 10px;
+    overflow: hidden;
+    height: 300px;
+    width: 100%;
+    /* background: #f6f6f6; */
+    position: relative;
+    margin-bottom: 30px !important;
+    transition: all 0.5s ease;
+}
+.discoverSlider__card__item .overlay{
+    background: rgba(0, 0, 0, 0.3);
+
+}
+.discoverSlider__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.discoverSlider__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.discoverSlider__text{
+    width: 100%;
+    /* height: 100%; */
+    overflow: hidden;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    /* padding: 10px 22px; */
+    transition: all 0.5s ease;
+    color: #ffffff;
+}
+.discoverSlider__text h3{
+    line-height: 36px;
+    font-weight: 600;
+    font-size: 27px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px){
+    .discoverSlider__card__item{
+        height: 300px;
+    }
+    /* .discoverSlider__cards .swiper-slide{
+        width: 70% !important;
+    } */
+    .discoverSlider__head h3{
+        font-size: 24px;
+    }
+    .discoverSlider__text{
+        left: 5px;
+    }
+    .discoverSlider__text h3{
+        line-height: normal;
+        font-weight: 600;
+        font-size: 20px;
+        text-transform: capitalize;
+    }
+}
+@media screen and (max-width: 992px) and (min-width: 600px){
+    .discoverSlider__head h3{
+        font-size: 24px;
+    }
+    .discoverSlider__text{
+        left: 5px;
+    }
+    .discoverSlider__text h3{
+        line-height: normal;
+        font-weight: 600;
+        font-size: 20px;
+        text-transform: capitalize;
+    }
+}

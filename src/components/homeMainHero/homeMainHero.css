@@ -1,0 +1,50 @@
+.homeMainHero__handler .dynamic__hero__handler {
+    background-image: url('../../assets/discoverHomeImg/heroImg.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+.homeMainHero__handler .dynamic__hero__handler .overlay {
+    /* height: 120vh;  */
+    /* background: rgba(92, 87, 94, 0.47); */
+    background: rgba(52, 7, 214, 0.47) !important;
+}
+
+.homeMainHero__handler .want__title {
+    color: #ffffff;
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.homeMainHero__handler .discover__hero__text h1,
+.homeMainHero__handler .discover__hero__text p {
+    color: #000;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 98%;
+    background-position-y: 50%;
+    border: 1px solid #4f1e1e;
+    border-radius: 2px;
+
+}
+select option{
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+select option:disabled{
+    font-size: 16px;
+    font-weight: 600;
+}
+select:focus {
+   box-shadow: none;
+   outline: none;
+}

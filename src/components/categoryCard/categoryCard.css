@@ -1,0 +1,95 @@
+.discover__category__card__box{
+    margin-bottom: 30px;
+    /* height: 300px; */
+    position: relative;
+}
+.discover__category__card__box figure{
+    border: 1px solid #e0e0e0;
+    width: 100%;
+    overflow: hidden;
+}
+.discover__categ__img{
+    width: 100%;
+    height: 150px;
+    position: relative;
+}
+.discover__categ__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+.discover__category__card__box span{
+    position: absolute;
+    bottom: 10px;
+    left: 30px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-black);
+}
+
+.discover__category__card__box span .ads__icon{
+    width: 30px;
+    height: 30px;
+
+}
+.discover__categ__info{
+    background: #fafafa;
+    padding: 25px 30px;
+    position: relative;
+    overflow: hidden;
+    min-height: 250px;
+}
+.discover__categ__info h4{
+    line-height: 18px;
+    font-weight: 700;
+    font-style: normal;
+    color: #232323;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.discover__categ__info p{
+    margin-bottom: 20px;
+    line-height: 24px;
+    font-weight: normal;
+    font-style: normal;
+    color: #6c6c6c;
+    font-size: 14px;
+}
+.discover__categ__info ul{
+    padding: 0;
+    margin-bottom: 20px;
+}
+.discover__categ__info ul li{
+    color: #6c6c6c;
+    margin-bottom: 5px;
+    transition: all ease-in .1s;
+}
+.discover__categ__info ul li:hover{
+    color: var(--primary-blue);
+    transform: translateX(5px);
+}
+.discover__categ__info ul li i{
+    padding-right: 5px;
+}
+.discover__view{
+    font-size: 16px;
+    font-weight: 600;
+    color: #143139;
+    text-transform: capitalize;
+    transition: all ease-in .1s;
+    position: absolute;
+    bottom: 15px;
+}
+.discover__view i{
+    margin-left: 10px;
+}
+.discover__view:hover{
+    color: var(--primary-blue);
+}

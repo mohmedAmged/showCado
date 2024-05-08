@@ -1,0 +1,42 @@
+.car__interest__Sec{
+padding: 10px;
+}
+.car__interest__handler{
+    border-top: 4px solid #153e4d;
+    padding-top: 29px;
+}
+.interest__text{
+    margin-bottom: 40px;
+}
+.interest__text h1{
+    line-height: 1.2;
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.interest__text h1 span{
+    color: var(--primary-blue);
+}
+.box__int__item{
+    cursor: pointer;
+}
+.box__int__item:hover p{
+    color: var(--primary-blue);
+}
+.img__int__item{
+    min-height: 62px;
+    line-height: 62px;
+    opacity: .9;
+    margin-bottom: 10px;
+}
+.img__int__item img{
+    width: 112px;
+}
+.box__int__item p{
+    color: #777;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 13px;
+    text-decoration: underline;
+    transition: all ease-in .2s;
+}

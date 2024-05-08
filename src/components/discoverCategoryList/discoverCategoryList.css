@@ -1,0 +1,85 @@
+.discoverCategoryList__subCategories ul{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.discoverCategoryList__subCategories ul li{
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    /* line-height: 36px; */
+    transition: all .1s ease-in;
+}
+.discoverCategoryList__subCategories ul li:hover{
+    color: var(--primary-black);
+}
+.activeDis{
+    color: var(--primary-black);
+    font-size: 18px !important;
+}
+.discoverCategoryList__handler .search__part__handler{
+    background-color: var(--primary-blue);
+}
+.discoverCategoryList__handler .cart__main__titels{
+    border-bottom: 0;
+}
+.search__part__handler {
+    /* background-color: var(--primary-blue); */
+    padding: 0 22px 30px;
+    color: #ffffff;
+    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, .27);
+}
+.discoverCategoryList__handler .search__title{
+    font-size: 26px;
+    font-weight: 600;
+    padding: 28px;
+    padding-left: 0;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+.discoverCategoryList__tit{
+    line-height: 36px;
+    font-weight: 600;
+    font-size: 26px;
+    text-transform: capitalize;
+}
+.discoverCategoryList__quickBtns{
+    margin: 30px 0;
+}
+.discoverCategoryList__quickBtns ul{
+    display: flex;
+    justify-content: center;
+    margin: 0!important;
+    padding: 0;
+    flex-wrap: wrap;
+}
+.discoverCategoryList__quickBtns ul .quickBtn:last-child{
+    margin-right: 0;
+}
+.discoverCategoryList__quickBtns ul .quickBtn{
+    cursor: pointer;
+    font-weight: 700;
+    margin-right: 10px;
+    padding: 9px 32px;
+    transition: all .2s ease-in;
+    border: 2px solid var(--primary-blue);
+    border-radius: 5px;
+    background: var(--primary-blue);
+    color: #fff;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+.discoverCategoryList__quickBtns ul .quickBtn:hover{
+    background: #fff;
+    color: var(--primary-blue);
+}
+
+
+@media screen and (max-width: 600px) {
+    .discoverCategoryList__quickBtns ul{
+        justify-content: flex-start;
+    }
+    .discoverCategoryList__quickBtns ul .quickBtn{
+    padding: 9px 20px;
+    }
+}

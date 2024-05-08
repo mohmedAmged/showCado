@@ -1,0 +1,56 @@
+.eco__ride__Sec {
+    background-image: url('../../assets/browserSec/cover1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 80px 0;
+    position: relative;
+}
+
+ .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.47);
+}
+
+.eco__text {
+    color: #ffffff;
+    z-index: 3;
+}
+
+.eco__text h1 {
+    line-height: 1.2;
+    font-size: 42px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.eco__text p {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 22px;
+    transition: all ease-in .2s;
+}
+
+.eco__btn {
+    display: flex;
+    justify-content: center;
+    padding: 15px 40px;
+    background-color: #ffffff;
+    color: #00DFA2;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+    text-transform: uppercase;
+}
+
+.eco__btn:hover {
+    background-color: #00DFA2;
+    color: #ffffff;
+}

@@ -5,7 +5,7 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { scrollToTop } from '../../functions/scrollToTop';
-import logo2 from '../../assets/logo/weblogo copy.png'
+import logo2 from '../../assets/logo/weblogo2.png'
 import { currCountryCode } from '../../functions/BaseURL';
 
 export default function MyNav({ scrollToggle, countriesData, token, handleLogout }) {
@@ -69,7 +69,7 @@ export default function MyNav({ scrollToggle, countriesData, token, handleLogout
                             >
                                 cars
                             </NavLink>
-                            <NavLink
+                            {/* <NavLink
                                 onClick={() => {
                                     scrollToTop();
                                 }
@@ -78,8 +78,8 @@ export default function MyNav({ scrollToggle, countriesData, token, handleLogout
                                 className={`nav-link nav__link__style ${!token && 'nav__link__style__tok'}`}
                                 to={`/${currCountryCode}/discover`}>
                                 Discover
-                            </NavLink>
-                            <NavLink
+                            </NavLink> */}
+                            {/* <NavLink
                                 onClick={() => {
                                     scrollToTop();
                                 }
@@ -87,6 +87,33 @@ export default function MyNav({ scrollToggle, countriesData, token, handleLogout
                                 className={`nav-link nav__link__style ${!token && 'nav__link__style__tok'}`}
                                 to={`/${currCountryCode}/save`}>
                                 Save
+                            </NavLink> */}
+                            <NavLink
+                                onClick={() => {
+                                    scrollToTop();
+                                }
+                                }
+                                className={`nav-link nav__link__style ${!token && 'nav__link__style__tok'}`}
+                                to={`/${currCountryCode}/Real Estate`}>
+                                Real Estate
+                            </NavLink>
+                            <NavLink
+                                onClick={() => {
+                                    scrollToTop();
+                                }
+                                }
+                                className={`nav-link nav__link__style ${!token && 'nav__link__style__tok'}`}
+                                to={`/${currCountryCode}/Electronics`}>
+                                Electronics
+                            </NavLink>
+                            <NavLink
+                                onClick={() => {
+                                    scrollToTop();
+                                }
+                                }
+                                className={`nav-link nav__link__style ${!token && 'nav__link__style__tok'}`}
+                                to={`/${currCountryCode}/Mobiles`}>
+                                Mobiles
                             </NavLink>
                             {/* <NavLink
                                 onClick={() => {
@@ -198,9 +225,9 @@ export default function MyNav({ scrollToggle, countriesData, token, handleLogout
                                     }
                                     }
                                     className={`nav-link nav__link__style`}
-                                    to={`/${currCountryCode}/discover`}
+                                    to={`/${currCountryCode}/Real Estate`}
                                 >
-                                    Discover
+                                    Real Estate
                                 </NavLink>
                                 <NavLink
                                     onClick={() => {
@@ -209,18 +236,20 @@ export default function MyNav({ scrollToggle, countriesData, token, handleLogout
                                     }
                                     }
                                     className={`nav-link nav__link__style`}
-                                    to={`/${currCountryCode}/save`}>
-                                    Save
+                                    to={`/${currCountryCode}/Electronics`}>
+                                    Electronics
                                 </NavLink>
-                                {/* <NavLink
+                                <NavLink
                                     onClick={() => {
                                         scrollToTop();
                                         closeOffcanvas();
-                                    }}
+                                    }
+                                    }
                                     className={`nav-link nav__link__style`}
-                                    to={`/${currCountryCode}/realestate`}>
-                                    Real Estate
-                                </NavLink> */}
+                                    to={`/${currCountryCode}/Mobiles`}>
+                                    Mobiles
+                                </NavLink>
+                                
                                 <NavLink onClick={() => {
                                     scrollToTop();
                                     closeOffcanvas();

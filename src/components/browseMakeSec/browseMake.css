@@ -1,0 +1,36 @@
+.browser__make__sec{
+    padding: 10px;
+}
+.browser__make__handler{
+    border-top: 4px solid #153e4d;
+    padding-top: 29px;
+}
+.browser__head{
+    margin-bottom: 20px;
+}
+.browser__head h1{
+    line-height: 1.2;
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.browser__head h1 span{
+    color: var(--primary-blue);
+}
+.browser__img img{
+    width: 112px;
+}
+.browser__text p{
+    color: #777;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 13px;
+    text-decoration: underline;
+    transition: all ease-in .2s;
+}
+.browser__box{
+    cursor: pointer;
+}
+.browser__box:hover p{
+    color: var(--primary-blue);
+}

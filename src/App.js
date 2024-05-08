@@ -8,6 +8,11 @@ import ScrollToTopButton from './components/scrollToTopButton/ScrollToTopButton'
 import DiscoverHome from './pages/discoverHome/DiscoverHome';
 import DefaultPage from './pages/defaultPage/DefaultPage';
 import MyMainHome from './pages/myMainHome/MyMainHome';
+import CarHome from './pages/carHome/CarHome';
+import DiscoverCategoryPage from './pages/discoverCategoryPage/DiscoverCategoryPage';
+import SingleDiscoverNamePage from './pages/singleDiscoverNamePage/SingleDiscoverNamePage';
+import NewCar from './pages/newCarPage/NewCar';
+import SingleProductPage from './pages/singleProductPage/SingleProductPage';
 
 function App() {
   const location = useLocation();
@@ -101,10 +106,15 @@ function App() {
         </>
       }
       <Routes>
-      <Route path='/' element={<DefaultPage countriesData={data?.countries} />} />
-      <Route path={`/${currCountryCode}`} element={<MyMainHome />} />
-
-          <Route path={`/${currCountryCode}/discover`} element={<DiscoverHome />} />
+        <Route path='/' element={<DefaultPage countriesData={data?.countries} />} />
+        <Route path={`/${currCountryCode}`} element={<DiscoverHome />} />
+        <Route path={`/${currCountryCode}/cars`} element={<CarHome />} />
+        <Route path={`/${currCountryCode}/new-cars`} element={<NewCar />} />
+        <Route path={`/${currCountryCode}/new-cars?:slug`} element={<NewCar />} />
+        <Route path={`/${currCountryCode}/car-Info/:carId`} element={<SingleProductPage />} />
+        <Route path={`/${currCountryCode}/discover`} element={<DiscoverHome />} />
+        <Route path={`/${currCountryCode}/:categoryName`} element={<DiscoverCategoryPage />} />
+        <Route path={`/${currCountryCode}/:discoverName`} element={<SingleDiscoverNamePage token={token}/>} />
       </Routes>
     </>
   );

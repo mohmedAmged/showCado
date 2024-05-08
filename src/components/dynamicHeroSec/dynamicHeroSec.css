@@ -1,0 +1,44 @@
+.dynamic__hero__img__banner{
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: contain;
+    height: 80vh;
+    position: relative;
+}
+.dynamic__hero__text__box{
+    color: #ffffff;
+    position: relative;
+}
+.dynamic__hero__text h1{
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-size: 70px;
+    line-height: 50px;
+    font-weight: 700;
+    letter-spacing: -3px;
+    text-transform: capitalize;
+
+}
+.dynamic__hero__text p{
+    margin-bottom: 0;
+    margin-left: 6px;
+    font-size: 20px;
+    letter-spacing: -1px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+
+/* start responsive */
+@media screen and (max-width: 993px) and (min-width: 600px) {
+    .dynamic__hero__text h1{
+        font-size: 50px;
+    }
+    }
+    @media screen and (max-width: 600px) and (min-width: 0px) {
+        .dynamic__hero__text h1{
+            font-size: 40px;
+        }
+    }

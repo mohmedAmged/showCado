@@ -1,0 +1,416 @@
+.single__product__handler{
+    padding-top: 60px;
+}
+.single__product__handler .card__title{
+    font-size: 36px !important;
+    font-weight: 700 !important;
+    line-height: 42px !important;
+    color: #232628;
+}
+/* ----- */
+.single__product__handler .cart__price{
+    padding: 11px 13px 11px 2px !important;
+    min-width: 137px;
+    font-size: 24px !important;
+    color: #fff;
+    font-weight: 700;
+    min-height: 74px;
+}
+.single__product__handler .cart__price .old__price{
+    font-size: 20px !important;
+}
+.single__product__handler .cart__price .new__price{
+    font-size: 24px !important;
+}
+
+.single__product__handler .cart__price::before{
+    left: -17px;
+    width: 40px;
+    transform: skew(-23deg,0deg);
+}
+/* ----- */
+.single__box__handler{
+    position: relative;
+    overflow: hidden;
+}
+.product__slider_imgs{
+    margin-bottom: 50px;
+}
+.img__card__badge{
+    position: absolute;
+    top: 27px;
+    left: -81px;
+    height: 49px;
+    padding: 0 100px;
+    line-height: 49px;
+    color: #fff !important;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: var(--primary-black);
+    transform: rotate(-45deg) translateZ(0);
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    z-index: 10;
+    overflow: hidden;
+}
+.product__detailes{
+    margin-bottom: 50px;
+    padding: 0 0 40px;
+    border-style: solid;
+    border-width: 0 0 4px;
+    border-color: var(--primary-blue);
+}
+.box__detail{
+    padding: 8px 15px;
+    border-bottom: 1px solid #d5d9e0;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+/* .box__detail:last-child{
+    border-bottom: 0;
+} */
+.box__detail .item__label{
+    font-size: 13px;
+    padding: 5px 5px 5px 0;
+    color: #888;
+    width: 45%;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+.box__detail .item__label i{
+    position: relative;
+    top: -2px;
+    font-size: 18px;
+    padding-right: 5px;
+    text-align: center;
+    min-width: 33px;
+    max-height: 22px;
+    vertical-align: top;
+    color: var(--primary-black);
+}
+.box__detail .item__title{
+    padding: 5px 0 5px 10px;
+    color: #222;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 55%;
+    flex-grow: 1;
+    cursor: pointer;
+}
+.product__features{
+    margin-bottom: 50px;
+    padding: 0 0 40px;
+    border-style: solid;
+    border-width: 0 0 4px;
+    border-color: var(--primary-blue);
+}
+.product__features h1{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.feature__box{
+    margin-bottom: 15px;
+}
+.feature__box h4{
+    margin-bottom: 11px;
+    line-height: 1.2;
+    font-size: 16px;
+    font-weight: 700;
+}
+.feature__box ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    flex-wrap: wrap;
+}
+.feature__box ul li{
+    display: flex;
+    align-items: flex-start;
+    padding-right: 8px;
+    margin-bottom: 8px;
+}
+.feature__box ul li i{
+    color: var(--primary-black);
+    font-size: 14px;
+    margin-right: 13px;
+    line-height: 20px;
+}
+.feature__box ul li span{
+    color: #232628;
+    font-size: 13px;
+    line-height: 22px;
+}
+.product__seller__notes{
+    margin-bottom: 20px;
+    padding: 0 0 30px;
+}
+.product__seller__notes h1{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.product__seller__notes p{
+    color: #232628;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+/* left__content__handler */
+.user__img{
+    margin-right: 14px;
+    text-align: center;
+    line-height: 40px;
+    width: 40px;
+}
+.user__img img{
+    border-radius: 50%;
+}
+.user__name h3{
+    color: #232628;
+    margin: 1px 0 0;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.user__name p{
+    color: #888;
+    font-size: 13px;
+    text-transform: capitalize;
+}
+.dellar__contacts{
+    margin: 29px 0 15px;
+    border-top: 1px solid #e4e4e4;
+}
+.dellar__contact__item{
+    position: relative;
+    margin-top: 20px;
+}
+.dellar__contact__item.phone{
+    border-color: #e0e3e7;
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,.09);
+    border-style: none;
+    border-radius: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.dellar__contact__item.phone i{
+    font-size: 13px;
+    margin: 0 17px 0 0;
+    color: #1bc744;
+}
+.dellar__contact__item.phone span{
+    font-size: 18px;
+    font-weight: 700;
+    color: #6ec1e4;
+}
+.dellar__contact__item.whatsapp{
+    padding-top: 7px;
+}
+.dellar__contact__item.whatsapp a,
+.dellar__contact__item.mail a
+{
+    text-decoration: none;
+}
+.dellar__contact__item.whatsapp a .whatsapp__btn{
+    display: flex;
+    align-items: center;
+    letter-spacing: normal;
+    text-align: left;
+    background-color: #fff;
+    color: #000;
+    border-color: #e0e3e7;
+    box-shadow: 0px 0px 7px 1px rgba(0,0,0,.09);
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 18px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 13px 17px;
+}
+.dellar__contact__item.whatsapp a .whatsapp__btn:hover,
+.dellar__contact__item.mail a .email__btn:hover
+{
+    background-color: #f8f8f8;
+    color: #153e4d;
+    border-color: #e0e3e7;
+    box-shadow: 0px 0px 7px 1px rgba(0,0,0,.09);
+}
+.dellar__contact__item.whatsapp a .whatsapp__btn i{
+    font-size: 26px;
+    margin: 0 17px 0 0;
+    color: #1bc744;
+}
+.dellar__contact__item.mail{
+    padding-left: 0;
+    margin-top: 20px;
+    padding-top: 0;
+}
+.dellar__contact__item.mail a .email__btn{
+    display: flex;
+    align-items: center;
+    letter-spacing: normal;
+    text-align: left;
+    background-color: #fff;
+    color: #000;
+    border-color: #e0e3e7;
+    box-shadow: 0px 0px 7px 1px rgba(0,0,0,.09);
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 22px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 13px 17px;
+}
+.dellar__contact__item.mail a .email__btn i{
+    font-size: 26px;
+    margin: 0 17px 0 0;
+    color: #6ec1e4;
+}
+.dellar__location{
+    margin-top: 30px;
+}
+.single__location__text{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+}
+.single__location__text i{
+    font-size: 13px;
+    margin-right: 1em;
+    color: var(--primary-blue);
+}
+.single__location__text span{
+    color: #000;
+    font-size: 14px;
+    line-height: 22px;
+}
+.dellar__location .map__Sec{
+    position: relative;
+    overflow: hidden;
+    margin-top: 1.5em;
+    height: 253px;
+    width: 100%;
+}
+.dellar__location .map__Sec iframe{
+    width: 100%;
+    height: 100%;
+}
+.message__Dellar__Sec{
+    background-color: #e8edef;
+    padding: 30px 0;
+}
+.box__message__info{
+    padding: 30px;
+    background-color: #fff;
+    border-style: solid;
+    border-width: 5px 0 0;
+    border-color: #153e4b;
+}
+.form__title{
+    margin-bottom: 15px;
+    line-height: 1.2;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.form__contact textarea,
+.form__contact input
+{
+    border: 1px solid #e1e2e4;
+    background-color: #fff;
+    border-radius: 0;
+}
+.form__contact textarea:focus, .form__contact input:focus{
+    outline: none;
+}
+.form-control:focus {
+    border-color: #e1e2e4;
+    /* border: 0; */
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  .form__contact label{
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 36px;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  .form__contact .form-check-input{
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -3px;
+    margin-right: 5px;
+  }
+  .form__contact .form-check-label{
+    font-size: 12px;
+    font-weight: normal;
+    text-transform: capitalize;
+  }
+  .form__contact input::placeholder,
+  .form__contact textarea::placeholder
+  {
+    text-transform: capitalize;
+  }
+  .form__contact button{
+    background: var(--primary-blue);
+    border-radius: 0;
+    border: 0;
+  }
+  .form__contact button:hover{
+    background: #5237a4;
+  }
+.img__list{
+    cursor: pointer;
+}
+/* resposive */
+@media screen and (max-width: 600px) {
+    .form__dellar__contact{
+        margin-top: 30px !important;
+        margin-bottom: 30px !important;
+    }
+    .message__Dellar__Sec{
+        margin-top: 20px;
+    }
+    .recent__cart__item{
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 992px){
+    .form__dellar__contact{
+        margin-top: 30px !important;
+        margin-bottom: 30px !important;
+    }
+    .message__Dellar__Sec{
+        margin-top: 20px;
+    }
+    .box__message__info{
+        display: none;
+    }
+}

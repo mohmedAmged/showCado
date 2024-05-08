@@ -1,0 +1,58 @@
+.hero__img__banner{
+    background-image: url('../../assets/heroSec/hero1.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    height: 80vh;
+}
+.hero__text__box{
+    color: #ffffff;
+    position: relative;
+}
+.hero__text__box h1{
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-size: 70px;
+    line-height: 50px;
+    font-weight: 700;
+    letter-spacing: -3px;
+
+}
+.hero__text__box h3{
+    margin-bottom: 0;
+    margin-left: 6px;
+    font-size: 24px;
+    letter-spacing: -1px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+.arrow__box{
+    position: absolute;
+    top: 35px;
+    left: -45px;
+}
+.arrow__box svg{
+    stroke: #ffffff;
+    stroke-width: 5px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+
+/* start responsive */
+@media screen and (max-width: 993px) {
+.arrow__box{
+    display: none;
+}
+}
+@media screen and (max-width: 993px) and (min-width: 600px) {
+    .hero__text__box h1{
+        font-size: 50px;
+    }
+    }
+    @media screen and (max-width: 600px) and (min-width: 0px) {
+        .hero__text__box h1{
+            font-size: 40px;
+        }
+    }

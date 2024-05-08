@@ -1,0 +1,8 @@
+.DynamicMapWeb__handler{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.DynamicMapWeb__handler__content .content__link{
+    font-size: 16px;
+    text-transform: capitalize;
+}

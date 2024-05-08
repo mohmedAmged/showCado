@@ -113,7 +113,7 @@ function App() {
         <Route path={`/${currCountryCode}/new-cars?:slug`} element={<NewCar />} />
         <Route path={`/${currCountryCode}/car-Info/:carId`} element={<SingleProductPage />} />
         <Route path={`/${currCountryCode}/discover`} element={<DiscoverHome />} />
-        <Route path={`/${currCountryCode}/:categoryName`} element={<DiscoverCategoryPage />} />
+        <Route path={`/${currCountryCode}/discover/:categoryName`} element={<DiscoverCategoryPage />} />
         <Route path={`/${currCountryCode}/:discoverName`} element={<SingleDiscoverNamePage token={token}/>} />
       </Routes>
     </>

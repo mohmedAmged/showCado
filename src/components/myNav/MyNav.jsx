@@ -94,7 +94,7 @@ export default function MyNav({ scrollToggle, countriesData, token, handleLogout
                                 }
                                 }
                                 className={`nav-link nav__link__style ${!token && 'nav__link__style__tok'}`}
-                                to={`/${currCountryCode}/Real Estate`}>
+                                to={`/${currCountryCode}/discover/Real Estate`}>
                                 Real Estate
                             </NavLink>
                             <NavLink
@@ -103,7 +103,7 @@ export default function MyNav({ scrollToggle, countriesData, token, handleLogout
                                 }
                                 }
                                 className={`nav-link nav__link__style ${!token && 'nav__link__style__tok'}`}
-                                to={`/${currCountryCode}/Electronics`}>
+                                to={`/${currCountryCode}/discover/Electronics`}>
                                 Electronics
                             </NavLink>
                             <NavLink
@@ -112,7 +112,7 @@ export default function MyNav({ scrollToggle, countriesData, token, handleLogout
                                 }
                                 }
                                 className={`nav-link nav__link__style ${!token && 'nav__link__style__tok'}`}
-                                to={`/${currCountryCode}/Mobiles`}>
+                                to={`/${currCountryCode}/discover/Mobiles`}>
                                 Mobiles
                             </NavLink>
                             {/* <NavLink
@@ -225,7 +225,7 @@ export default function MyNav({ scrollToggle, countriesData, token, handleLogout
                                     }
                                     }
                                     className={`nav-link nav__link__style`}
-                                    to={`/${currCountryCode}/Real Estate`}
+                                    to={`/${currCountryCode}/discover/Real Estate`}
                                 >
                                     Real Estate
                                 </NavLink>
@@ -236,7 +236,7 @@ export default function MyNav({ scrollToggle, countriesData, token, handleLogout
                                     }
                                     }
                                     className={`nav-link nav__link__style`}
-                                    to={`/${currCountryCode}/Electronics`}>
+                                    to={`/${currCountryCode}/discover/Electronics`}>
                                     Electronics
                                 </NavLink>
                                 <NavLink
@@ -246,7 +246,7 @@ export default function MyNav({ scrollToggle, countriesData, token, handleLogout
                                     }
                                     }
                                     className={`nav-link nav__link__style`}
-                                    to={`/${currCountryCode}/Mobiles`}>
+                                    to={`/${currCountryCode}/discover/Mobiles`}>
                                     Mobiles
                                 </NavLink>
                                 

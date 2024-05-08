@@ -18,7 +18,7 @@ export default function CategoryCard({ category, imgSrc, adsCount, subcategories
                         </span>
                     </div>
                     <div className="discover__categ__info">
-                        <NavLink to={`/${currCountryCode}/${category}`} className="nav-link"
+                        <NavLink to={`/${currCountryCode}/discover/${category}`} className="nav-link"
                             onClick={() => {
                                 scrollToTop();
                             }}
@@ -38,7 +38,7 @@ export default function CategoryCard({ category, imgSrc, adsCount, subcategories
                         </ul>
                         <div className="discover__view">
                             <NavLink
-                                to={`/${currCountryCode}/${category}`}
+                                to={`/${currCountryCode}/discover/${category}`}
                                 onClick={() => {
                                     scrollToTop();
                                 }}

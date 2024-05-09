@@ -1,0 +1,116 @@
+.myFooter__handler{
+    background-color: var(--primary-blue);
+    padding: 40px 0;
+    color: #ffffff;
+}
+.myFooter__top{
+    /* display: flex;
+    justify-content: space-between; */
+    padding-top: 10px;
+    padding-bottom: 28px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid rgba(255,255,255,.2);
+}
+.myFooter__search form{
+    position: relative;
+    display: inline-block;
+}
+.myFooter__search form input{
+    /* position: absolute;
+    top: 0px;
+    left: 0px; */
+    box-shadow: none;
+    opacity: 1;
+    background: none 0% 0% / auto repeat scroll padding-box border-box rgba(255, 255, 255, 0.1);
+    border: none;
+    width: 260px;
+    /* width: 100%; */
+    padding-left: 16px;
+    padding-right: 50px;
+    border-color: transparent !important;
+    color: #fff;
+    height: 35px;
+    line-height: 31px;
+    font-size: 14px;
+}
+.myFooter__search form input::placeholder{
+    font-size: 16px;
+    color: #888;
+    text-transform: capitalize;
+}
+.myFooter__search form button{
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 36px;
+    text-align: center;
+    padding: 0;
+    height: 100%;
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    color: #888;
+    /* background: none 0% 0% / auto repeat scroll padding-box border-box rgba(255, 255, 255, 0.1); */
+}
+.myFooter__menu__flex{
+    display: flex;
+    justify-content: flex-end;
+}
+.myFooter__menu{
+    overflow: hidden;
+    text-align: right;
+}
+.myFooter__menu ul{
+    padding: 0;
+    margin: 0;
+    margin: 6px 0 0;
+    display: flex;
+}
+.myFooter__menu ul li:first-child{
+margin-left: 0;
+}
+.myFooter__menu ul li{
+    position: relative;
+    display: inline-block;
+    margin-left: 24px;
+    text-transform: capitalize;
+}
+.myFooter__menu ul li .menu__link{
+    font-size: 16px;
+    color: rgba(255,255,255,.5);
+}
+.copyright__text{
+    font-size: 16px;
+    color: #888;
+}
+.copyRights__social ul{
+    padding: 0;
+    margin: 0;
+    /* margin: 6px 0 0; */
+    display: flex;
+}
+.copyRights__social ul li:first-child{
+margin-left: 0;
+}
+.copyRights__social ul li{
+    position: relative;
+    display: inline-block;
+    margin-left: 36px;
+}
+.copyRigths__icon__link{
+    color: #888;
+}
+
+@media screen and (max-width: 600px) {
+    .myFooter__search form{
+        width: 100%;
+    }
+    .myFooter__search form input{
+        width: 100%;
+    }
+    .myFooter__menu__flex{
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
+

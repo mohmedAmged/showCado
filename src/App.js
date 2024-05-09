@@ -13,6 +13,11 @@ import DiscoverCategoryPage from './pages/discoverCategoryPage/DiscoverCategoryP
 import SingleDiscoverNamePage from './pages/singleDiscoverNamePage/SingleDiscoverNamePage';
 import NewCar from './pages/newCarPage/NewCar';
 import SingleProductPage from './pages/singleProductPage/SingleProductPage';
+import PageNotFound from './pages/pageNotFound/PageNotFound';
+import UserDashBoard from './pages/userDashboard/UserDashBoard';
+import Register from './components/register/Register';
+import Login from './components/login/Login';
+import MyFooter from './components/myFooter/MyFooter';
 
 function App() {
   const location = useLocation();
@@ -115,7 +120,27 @@ function App() {
         <Route path={`/${currCountryCode}/discover`} element={<DiscoverHome />} />
         <Route path={`/${currCountryCode}/discover/:categoryName`} element={<DiscoverCategoryPage />} />
         <Route path={`/${currCountryCode}/:discoverName`} element={<SingleDiscoverNamePage token={token}/>} />
+        {
+          token && <Route path={`/${currCountryCode}/user/dashboard`} element={<UserDashBoard countriesData={data?.countries} token={token} />} />
+        }
+        <Route
+          path={`/${currCountryCode}/register`}
+          element={<Register handleLoginOrRegister={handleLoginOrRegister} countriesData={data?.countries} />}
+        />
+        <Route
+          path={`/${currCountryCode}/login`}
+          element={<Login handleLoginOrRegister={handleLoginOrRegister} />}
+        />
+        <Route path='*' element={<PageNotFound error={error || 'Page Not Found'} />} />
       </Routes>
+      {
+        !(
+          (currentRoute.toLowerCase() === `/${currCountryCode}/login`.toLowerCase())
+          ||
+          (currentRoute.toLowerCase() === `/${currCountryCode}/register`.toLowerCase())
+        ) &&
+        <MyFooter />
+      }
     </>
   );
 }

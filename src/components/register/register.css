@@ -1,0 +1,107 @@
+.registerAndLogin__handler {
+    position: relative;
+    background-image: url('../../assets/logo/heroCover.png');
+    background-position: 50%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    padding: 60px 0;
+}
+
+.registerAndLogin__handler::after {
+    background-color: rgba(0, 0, 0, .377);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.icon__routeBackToHome {
+    color: #fff;
+    cursor: pointer;
+    left: 50px;
+    top: 30px;
+    z-index: 10;
+}
+
+.registerAndLogin__handler .registeration__form {
+    background-color: rgba(71, 40, 165, 0.505);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    box-shadow: 0 0 45px #ffffff26;
+    padding: 30px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.registeration__form h2 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.registerAndLogin__handler input,
+.registerAndLogin__handler select {
+    border: none;
+    border-bottom: 1px solid #d4d4d4;
+    border-radius: 5px !important;
+    -webkit-border-radius: 5px !important;
+    height: 50px;
+    outline: none;
+    padding: 10px 20px;
+}
+
+.registeration__form__btn button {
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    color: #2b3a2b;
+    font-size: 20px;
+    font-weight: 500;
+    height: 50px;
+    outline: none;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    width: 180px;
+}
+
+.registeration__form__btn button:hover {
+    background-color: var(--primary-black);
+    color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+    .icon__routeBackToHome {
+        top: 20px;
+    }
+}
+
+.password__eye {
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    font-size: 27px;
+    cursor: pointer;
+}
+.password__eye-err {
+    top: 20%;
+    right: 25px;
+    transform: translateY(-27%);
+    -webkit-transform: translateY(-27%);
+    -moz-transform: translateY(-27%);
+    -ms-transform: translateY(-27%);
+    -o-transform: translateY(-27%);
+    font-size: 27px;
+    cursor: pointer;
+}

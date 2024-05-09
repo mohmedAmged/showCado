@@ -5,7 +5,7 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { scrollToTop } from '../../functions/scrollToTop';
-import logo2 from '../../assets/logo/weblogo2.png'
+import logo2 from '../../assets/logo/weblogo4.png'
 import { currCountryCode } from '../../functions/BaseURL';
 
 export default function MyNav({ scrollToggle, countriesData, token, handleLogout }) {

@@ -1,0 +1,8 @@
+.userDashBoard__handler .dynamic__hero__handler{
+    background-image:none;
+    background: hsla(239, 100%, 50%, 0.594);
+    padding: 162px 0;
+}
+.userDashBoard__handler .discover__hero__form{
+    display: none;
+    }

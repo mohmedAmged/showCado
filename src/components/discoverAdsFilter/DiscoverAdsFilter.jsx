@@ -45,7 +45,7 @@ export default function DiscoverAdsFilter({ discoversFetched }) {
                                 >
                                     Latest
                                 </li>
-                                {categoryNames?.slice(0,2)?.map((categoryName) => (
+                                {categoryNames?.slice(0,3)?.map((categoryName) => (
                                     <li
                                         key={categoryName}
                                         className={`ads__tab ${activeTab === categoryName?.toLowerCase() ? 'active' : ''}`}

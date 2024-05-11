@@ -1,6 +1,7 @@
 .heroSecMainLinks__handler .hero__img__banner{
     background-image: url('../../assets/realestateIcons/realestateBg.jpg');
     height: 100vh;
+    position: relative;
 }
 .heroSecMainLinks__handler .hero__img__banner .overlay{
     background: rgba(52, 7, 214, 0.274) !important;

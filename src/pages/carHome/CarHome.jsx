@@ -47,6 +47,7 @@ export default function MyHome() {
     return () => clearTimeout(timeoutId);
   }, [showContent]);
 
+  console.log(bodyQuery?.data?.bodies.slice(0,2));
   return (
     <>
     {

@@ -18,6 +18,7 @@ import UserDashBoard from './pages/userDashboard/UserDashBoard';
 import Register from './components/register/Register';
 import Login from './components/login/Login';
 import MyFooter from './components/myFooter/MyFooter';
+import RealEstateHome from './pages/RealEstateHome/RealEstateHome';
 
 function App() {
   const location = useLocation();
@@ -114,6 +115,7 @@ function App() {
         <Route path='/' element={<DefaultPage countriesData={data?.countries} />} />
         <Route path={`/${currCountryCode}`} element={<DiscoverHome />} />
         <Route path={`/${currCountryCode}/cars`} element={<CarHome />} />
+        <Route path={`/${currCountryCode}/realestate`} element={<RealEstateHome />} />
         <Route path={`/${currCountryCode}/new-cars`} element={<NewCar />} />
         <Route path={`/${currCountryCode}/new-cars?:slug`} element={<NewCar />} />
         <Route path={`/${currCountryCode}/car-Info/:carId`} element={<SingleProductPage />} />

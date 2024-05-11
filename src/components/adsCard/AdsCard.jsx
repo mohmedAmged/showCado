@@ -20,6 +20,7 @@ export default function AdsCard({ discoverData }) {
     const getImageSource = () => {
         return discoverData?.discover_images[activeIndicator]?.image;
     };
+    console.log(discoverData);
     return (
         <div className="col-lg-4 col-md-6 col-sm-12">
             <div className="recent__cart__item mb-3">

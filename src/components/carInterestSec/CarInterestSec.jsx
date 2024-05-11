@@ -18,7 +18,7 @@ export default function CarInterestSec({interestItems}) {
                         <div className="col-lg-12">
                             <div className="interest__text">
                                 <h1>
-                                    Browse Ready to buy cars by <span>Interest</span>
+                                    Discover what you need by <span>Interest</span>
                                 </h1>
                             </div>
                         </div>

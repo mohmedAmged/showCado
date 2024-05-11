@@ -94,7 +94,7 @@ export default function MyNav({ scrollToggle, countriesData, token, handleLogout
                                 }
                                 }
                                 className={`nav-link nav__link__style ${!token && 'nav__link__style__tok'}`}
-                                to={`/${currCountryCode}/discover/Real Estate`}>
+                                to={`/${currCountryCode}/realestate`}>
                                 Real Estate
                             </NavLink>
                             <NavLink

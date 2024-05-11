@@ -43,6 +43,7 @@ export default function DiscoverHome() {
       return () => clearTimeout(timeoutId);
   });
   const navigateLinkTwo = `/${currCountryCode}`
+  console.log(discoverHome?.data?.discoverCategories);
   return (
     <>
     {
@@ -82,7 +83,8 @@ export default function DiscoverHome() {
               id: discover.discover_id,
               category: discover.discover_name,
               image: discover.discover_image,
-            }))}
+            }))
+          }
           />
         ))}
         {/* <DiscoverAdsLocation /> */}

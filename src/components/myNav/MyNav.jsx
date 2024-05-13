@@ -236,7 +236,7 @@ export default function MyNav({ scrollToggle, countriesData, token, handleLogout
                                     }
                                     }
                                     className={`nav-link nav__link__style`}
-                                    to={`/${currCountryCode}/discover/Electronics`}>
+                                    to={`/${currCountryCode}/electronics`}>
                                     Electronics
                                 </NavLink>
                                 <NavLink
@@ -246,7 +246,7 @@ export default function MyNav({ scrollToggle, countriesData, token, handleLogout
                                     }
                                     }
                                     className={`nav-link nav__link__style`}
-                                    to={`/${currCountryCode}/discover/Mobiles`}>
+                                    to={`/${currCountryCode}/mobiles`}>
                                     Mobiles
                                 </NavLink>
                                 

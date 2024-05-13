@@ -183,8 +183,8 @@ const interestItemsMobiles = [
 ]
 const bannerItemsRealestate = [
   {
-      title: "Electronics",
-      disc: "Discover high-quality electronics with warranty assurance, sourced from verified sellers for a reliable tech experience.",
+      title: "Real Estate",
+      disc: "Discover homes with warranty-backed assurance and verified sellers for a trustworthy real estate experience.",
       image: imgUrl1,
       link: 'Real Estate'
   }

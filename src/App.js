@@ -19,7 +19,22 @@ import Register from './components/register/Register';
 import Login from './components/login/Login';
 import MyFooter from './components/myFooter/MyFooter';
 import RealEstateHome from './pages/RealEstateHome/RealEstateHome';
-
+import palace from './assets/realestateIcons/icons8-palace-64.png';
+import villa from './assets/realestateIcons/icons8-villa-64.png';
+import apartment from './assets/realestateIcons/icons8-apartment-64.png';
+import chalet from './assets/realestateIcons/icons8-chalet-50.png';
+import imgUrl1 from './assets/realestateIcons/realestateBanner.jpg';
+import imgUrl2 from './assets/electronicsIcons/banner.jpg';
+import heroBg1 from './assets/realestateIcons/realestateBg.jpg'
+import heroBg2 from './assets/electronicsIcons/elecBg.jpg'
+import heroBg3 from './assets/mobileIcons/mobilesBg.jpg'
+import imgUrl3 from './assets/mobileIcons/mobileBanner.png'
+import tv from './assets/electronicsIcons/icons8-tv-50.png'
+import camera from './assets/electronicsIcons/icons8-camera-50.png'
+import sub from './assets/electronicsIcons/icons8-subwoofer-50.png'
+import mobile from './assets/mobileIcons/icons8-mobile-50.png'
+import tablets from './assets/mobileIcons/icons8-tablet-48.png'
+import watches from './assets/mobileIcons/icons8-smart-watch-50.png'
 function App() {
   const location = useLocation();
   const currentRoute = location.pathname;
@@ -98,6 +113,119 @@ function App() {
     localStorage.removeItem('userToken');
     setToken('');
   };
+
+
+//   const subCategData = useQuery({
+//     queryKey: ['discover-sub-ctegory'],
+//     queryFn: async () => {
+//       const fetchData = await fetch(`${baseURL}/${currCountryCode}/discover-sub-categories`);
+//       const response = await fetchData.json();
+//       return response.data;
+//     },
+//   });
+// console.log(subCategData?.data?.subCategories);
+
+  const interestItemsReal = [
+    {
+        image: palace,
+        id: 1,
+        name: "Palace"
+    },
+    {
+        image: villa,
+        id: 2,
+        name: "Villa"
+    },
+    {
+        image: apartment,
+        id: 3,
+        name: "Apartment"
+    },
+    {
+        image: chalet,
+        id: 4,
+        name: "chalet"
+    },
+]
+const interestItemsElectronics = [
+  {
+      image: tv,
+      id: 1,
+      name: "Televisions"
+  },
+  {
+      image: camera,
+      id: 2,
+      name: "Digital Camera"
+  },
+  {
+      image: sub,
+      id: 3,
+      name: "Audio Speaker"
+  },
+]
+const interestItemsMobiles = [
+  {
+      image: mobile,
+      id: 1,
+      name: "Smart Phones"
+  },
+  {
+      image: tablets,
+      id: 2,
+      name: "Tablets"
+  },
+  {
+      image: watches,
+      id: 3,
+      name: "Smart Watches"
+  },
+]
+const bannerItemsRealestate = [
+  {
+      title: "Electronics",
+      disc: "Discover high-quality electronics with warranty assurance, sourced from verified sellers for a reliable tech experience.",
+      image: imgUrl1,
+      link: 'Real Estate'
+  }
+]
+const bannerItemsElectronics = [
+  {
+      title: "Electronics",
+      disc: "Discover homes with warranty-backed assurance and verified sellers for a trustworthy real estate experience.",
+      image: imgUrl2,
+      link: 'Electronics'
+  }
+]
+const bannerItemsMobiles = [
+  {
+      title: "Mobiles",
+      disc: "Discover warranty-backed assurance and trusted sellers for a secure real estate experience.",
+      image: imgUrl3,
+      link: 'Mobiles'
+  }
+]
+const heroItems = [
+  {
+      title: "Guaranteed Quality",
+      subTit: "Discover homes with warranty-backed assurance and verified sellers for a trustworthy real estate experience.",
+      image: heroBg1
+  }
+]
+const heroItemsElec = [
+  {
+      title: "Guaranteed Quality",
+      subTit: "Explore electronics with warranty-backed assurance and verified sellers for a reliable tech experience.",
+      image: heroBg2
+  }
+]
+const heroItemsMobile = [
+  {
+      title: "Guaranteed Quality",
+      subTit: "Explore mobile devices with warranty-backed assurance and verified sellers for a reliable tech experience.",
+      image: heroBg3
+  }
+]
   return (
     <>
       {
@@ -115,7 +243,13 @@ function App() {
         <Route path='/' element={<DefaultPage countriesData={data?.countries} />} />
         <Route path={`/${currCountryCode}`} element={<DiscoverHome />} />
         <Route path={`/${currCountryCode}/cars`} element={<CarHome />} />
-        <Route path={`/${currCountryCode}/realestate`} element={<RealEstateHome />} />
+        {/* /////// */}
+        <Route path={`/${currCountryCode}/realestate`} element={<RealEstateHome interestItems={interestItemsReal} bannerItemsRealestate={bannerItemsRealestate} heroItems={heroItems}/>} />
+        {/* ///////// */}
+        <Route path={`/${currCountryCode}/electronics`} element={<RealEstateHome interestItems={interestItemsElectronics} bannerItemsRealestate={bannerItemsElectronics} heroItems={heroItemsElec}/>} />
+        {/* ///////////////// */}
+        <Route path={`/${currCountryCode}/mobiles`} element={<RealEstateHome interestItems={interestItemsMobiles} bannerItemsRealestate={bannerItemsMobiles} heroItems={heroItemsMobile}/>} />
+
         <Route path={`/${currCountryCode}/new-cars`} element={<NewCar />} />
         <Route path={`/${currCountryCode}/new-cars?:slug`} element={<NewCar />} />
         <Route path={`/${currCountryCode}/car-Info/:carId`} element={<SingleProductPage />} />

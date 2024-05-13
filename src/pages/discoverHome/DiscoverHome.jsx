@@ -43,7 +43,6 @@ export default function DiscoverHome() {
       return () => clearTimeout(timeoutId);
   });
   const navigateLinkTwo = `/${currCountryCode}`
-  console.log(discoverHome?.data?.discoverCategories);
   return (
     <>
     {

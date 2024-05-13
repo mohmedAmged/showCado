@@ -7,9 +7,8 @@ import Error from '../../components/error/Error';
 
 import RealEstateInterest from '../../components/realEstateInterestSec/RealEstateInterest';
 import HeroSecMainLinks from '../../components/heroSecMainLinks/HeroSecMainLinks';
-import EcoRideSec from '../../components/ecoRidesSec/EcoRideSec';
 import BannerForMainLinksSec from '../../components/bannerforMainLinks/BannerForMainLinksSec';
-export default function RealEstateHome() {
+export default function RealEstateHome({interestItems, bannerItemsRealestate, heroItems}) {
     const [showContent, setShowContent] = useState(true);
     const [currentData, setCurrentData] = useState(null)
 
@@ -30,6 +29,7 @@ export default function RealEstateHome() {
         return () => clearTimeout(timeoutId);
     }, [showContent]);
 
+
     return (
         <>
             {
@@ -39,10 +39,9 @@ export default function RealEstateHome() {
                         <Error error={error} />
                         :
                         <>
-                            <HeroSecMainLinks />
-                            {/* <MainTypeSec /> */}
-                            <RealEstateInterest />
-                            <BannerForMainLinksSec />
+                            <HeroSecMainLinks heroItems={heroItems}/>
+                            <RealEstateInterest interestItems={interestItems}/>
+                            <BannerForMainLinksSec bannerItemsRealestate={bannerItemsRealestate}/>
                         </>
             }
         </>

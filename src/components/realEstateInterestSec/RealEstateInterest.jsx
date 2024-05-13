@@ -4,36 +4,12 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation, Keyboard } from 'swiper/modules';
-import palace from '../../assets/realestateIcons/icons8-palace-64.png';
-import villa from '../../assets/realestateIcons/icons8-villa-64.png';
-import apartment from '../../assets/realestateIcons/icons8-apartment-64.png';
-import chalet from '../../assets/realestateIcons/icons8-chalet-50.png';
+
 import { NavLink } from 'react-router-dom';
 import { currCountryCode } from '../../functions/BaseURL';
 
-export default function RealEstateInterest() {
-    const interestItems = [
-        {
-            image: palace,
-            id: 1,
-            name: "Palace"
-        },
-        {
-            image: villa,
-            id: 2,
-            name: "Villa"
-        },
-        {
-            image: apartment,
-            id: 3,
-            name: "Apartment"
-        },
-        {
-            image: chalet,
-            id: 4,
-            name: "chalet"
-        },
-    ]
+export default function RealEstateInterest({interestItems}) {
+
     return (
         <div className='realEstate__handler'>
             <div className='car__interest__Sec mb-5'>

@@ -39,9 +39,9 @@ export default function MyNav({ scrollToggle, countriesData, token, handleLogout
             <Navbar expand="lg" className={`nav__Bg ${scrollToggle ? "nav__fixed py-3 navTransformationDown" : "nav__absolute pb-3"} align-items-center`}>
                 <Container>
                     <Navbar.Brand className='d-flex align-items-center'>
-                        <NavLink to={`/${currCountryCode}`}>
+                        {/* <NavLink to={`/${currCountryCode}`}>
                             <img className='logo__Width' src={logo2} alt="main__logo" />
-                        </NavLink>
+                        </NavLink> */}
                     </Navbar.Brand>
                     <Navbar.Toggle onClick={handleOffcanvasToggle} aria-controls="basic-navbar-nav" />
                     {/* start navbar min-width 992px */}
